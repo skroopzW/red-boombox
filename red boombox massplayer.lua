@@ -12,9 +12,9 @@
 
 
 -- Auto Delete:
-for _,blueboomboxgui in pairs(game.CoreGui:GetDescendants()) do
-	if blueboomboxgui:IsA("ScreenGui") and blueboomboxgui.Name == "Blue Boombox Massplayer" then
-		blueboomboxgui:Destroy()
+for _,redboomboxgui in pairs(game.CoreGui:GetDescendants()) do
+	if redboomboxgui:IsA("ScreenGui") and redboomboxgui.Name == "Red Boombox Massplayer" then
+		redboomboxgui:Destroy()
 	end
 end
 
@@ -26,7 +26,7 @@ local humanoid = char.Humanoid
 
 
 
-local BlueBoomboxMassplayer = Instance.new("ScreenGui")
+local RedBoomboxMassplayer = Instance.new("ScreenGui")
 local Main = Instance.new("Frame")
 local UICorner = Instance.new("UICorner")
 local Play = Instance.new("TextButton")
@@ -45,11 +45,11 @@ local Title = Instance.new("TextLabel")
 
 --Properties:
 
-BlueBoomboxMassplayer.Name = "Blue Boombox Massplayer"
-BlueBoomboxMassplayer.Parent = game.CoreGui
+RedBoomboxMassplayer.Name = "Red Boombox Massplayer"
+RedBoomboxMassplayer.Parent = game.CoreGui
 
 Main.Name = "Main"
-Main.Parent = BlueBoomboxMassplayer
+Main.Parent = RedBoomboxMassplayer
 Main.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
 Main.BackgroundTransparency = 0.450
 Main.Position = UDim2.new(0.0122352187, 0, 0.288808674, 0)
